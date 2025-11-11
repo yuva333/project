@@ -1,0 +1,88 @@
+.doctors-list {
+  padding: 20px;
+}
+
+.doctors-list h2 {
+  margin-bottom: 15px;
+}
+
+.doctors-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.doctors-list li {
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+
+.doctors-list {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.doctors-list h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.doctors-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.doctor-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #0077ff;
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.doctor-card strong {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+
+.doctor-card p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #444;
+}

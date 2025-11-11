@@ -1,0 +1,210 @@
+.bills {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bills h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.bills form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.bills input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.bills button {
+  padding: 10px 16px;
+  background: #27ae60;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bills button:hover {
+  background: #1e8449;
+}
+
+.bills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.bills li button {
+  background: #e74c3c;
+}
+
+.bills li button:hover {
+  background: #c0392b;
+}
+
+
+
+
+/* Bills.css */
+.bills {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ✅ Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bills h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #198754;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.bills h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #198754;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ✅ Bill Form */
+.bills form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.bills form input {
+  flex: 1 1 200px;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.bills form input:focus {
+  border: 1px solid #198754;
+  box-shadow: 0px 0px 8px rgba(25, 135, 84, 0.3);
+  outline: none;
+}
+
+/* ✅ Add Bill Button */
+.bills form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #198754, #157347);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.bills form button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #157347, #115c39);
+}
+
+/* ✅ Bill List */
+.bills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bills li {
+  background: #f8f9fa;
+  margin: 12px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* ✅ Slide-in animation for list items */
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.bills li:hover {
+  background: #eafbee;
+  transform: scale(1.02);
+  box-shadow: 0px 4px 12px rgba(25, 135, 84, 0.2);
+}
+
+/* ✅ Delete Button */
+.bills li button {
+  background: #dc3545;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.bills li button:hover {
+  background: #bb2d3b;
+  transform: scale(1.05);
+}
